@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'MotivaSansRegular';
+  src: url('./app/Assets/Fonts/MotivaSansRegular.woff.ttf') format('truetype');;
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MotivaSansLight';
+  src: url('./app/Assets/Fonts/MotivaSansLight.woff.ttf') format('truetype');;
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MotivaSansBold';
+  src: url('./app/Assets/Fonts/MotivaSansBold.woff.ttf') format('truetype');;
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MotivaSansMedium';
+  src: url('./app/Assets/Fonts/MotivaSansMedium.woff.ttf') format('truetype');;
+  font-weight: normal;
+  font-style: normal;
+}
+
