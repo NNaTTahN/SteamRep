@@ -1,12 +1,15 @@
 <!--Gradient-->
 
 <!--Body-->
+<<<<<<< HEAD
 <div class="bg-[#1B2838] h-[70rem] w-full min-w-full">
   <div class="absolute z-10 h-[200px] sm:h-[600px] w-full sm:max-w-[600px] rounded-[100%] bg-[#184251] translate-x-[15rem] translate-y-[-10rem] blur-[100px]"></div>
   <div class="absolute z-0 h-[100px] lg:h-[800px]  md:max-w-[400px] sm:max-w-[200px]  rounded-[100%] bg-[#1F3052] translate-x-[25rem] translate-y-[-10rem] blur-[300px]"></div>
+=======
+<div class="bg-[#1B2838] h-[70rem]">
+>>>>>>> a8eced8 (Home page game list WIP)
   <!-- Search bar -->
   <div class="inset-0  flex justify-center">
-    <!-- Search bar -->
     <div class="relative z-20 bg-gradient-to-r from-[#3B6691] to-[#0F216E] w-1/2 h-fit  translate-y-[10rem] flex justify-between min-w-[55rem]">
       <div class="flex gap-4">
         <a class="font-MotivaSans text-white p-2 text-[14px] text-shadow-black hover-highlight">Your Store</a>
@@ -39,6 +42,20 @@
             <app-game-list-layout [gameImg]="'baguette.PNG'" [gameTags]="['Action', 'RPG', 'Turn-based']"></app-game-list-layout>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Home page game list  -->
+  <div class="Game-list-bg flex h-[70rem] w-full translate-y-[46rem] justify-center pt-2">
+    <div id="Home page game list" class="bg-white h-full w-1/2">
+      <div id="Home tabs" class="flex">
+        <button (click)="buttonClicked('newAndTrending')"
+                [ngClass]="activeButton === 'newAndTrending' ? ' bg-[#2A475E] rounded-t-[2px]' : 'bg-[#1B2838]'" >New & Trending</button>
+        <button (click)="buttonClicked('topSeller')"
+                [ngClass]="activeButton === 'topSeller' ? 'bg-[#2A475E] rounded-t-[2px]' : 'bg-[#1B2838]'">Top Seller</button>
+        <button (click)="buttonClicked('trendingFree')"
+                [ngClass]="activeButton === 'trendingFree' ? 'bg-[#2A475E] rounded-t-[2px]' : 'bg-[#1B2838]'">Trending free</button>
       </div>
     </div>
   </div>

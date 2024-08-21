@@ -15,3 +15,6 @@
 .shadow-right{
   box-shadow: 4px 0px 8px rgba(0, 0, 0, 1);
 }
+.Game-list-bg{
+  background: linear-gradient(to bottom, #2A475E 0%, #1D2C3D 50%, #1D2C3D 100%);
+}
