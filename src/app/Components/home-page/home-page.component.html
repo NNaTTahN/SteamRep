@@ -1,8 +1,10 @@
 <!--Gradient-->
-<div class="absolute z-10 h-[600px] w-[600px] rounded-[100%] bg-[#184251] translate-x-[15rem] translate-y-[-10rem] blur-[100px]"></div>
-<div class="absolute z-0 h-[1000px] w-[1000px] rounded-[100%] bg-[#1F3052] translate-x-[25rem] translate-y-[-10rem] blur-[300px]"></div>
+
 <!--Body-->
-<div class="bg-[#1B2838] h-[70rem]">
+<div class="bg-[#1B2838] h-[70rem] w-full min-w-full">
+  <div class="absolute z-10 h-[200px] sm:h-[600px] w-full sm:max-w-[600px] rounded-[100%] bg-[#184251] translate-x-[15rem] translate-y-[-10rem] blur-[100px]"></div>
+  <div class="absolute z-0 h-[100px] lg:h-[800px]  md:max-w-[400px] sm:max-w-[200px]  rounded-[100%] bg-[#1F3052] translate-x-[25rem] translate-y-[-10rem] blur-[300px]"></div>
+  <!-- Search bar -->
   <div class="inset-0  flex justify-center">
     <!-- Search bar -->
     <div class="relative z-20 bg-gradient-to-r from-[#3B6691] to-[#0F216E] w-1/2 h-fit  translate-y-[10rem] flex justify-between min-w-[55rem]">
@@ -18,32 +20,23 @@
     </div>
   </div>
   <!-- Featured & Recommended -->
-  <div class="flex justify-center">
-    <div class="absolute flex flex-col gap-2 z-30 h-[23rem] w-1/2 min-w-[55rem] translate-y-[12rem]">
-      <p class="text-[14px] text-white font-MotivaSans">FEATURED & RECOMMENDED</p>
-      <div class="flex w-full h-full shadow-black thin-high-intensity-shadow">
-        <img id="Game-Thumbnail" src="lightskinned.png" class="relative left-0 h-full w-2/3 shadow-right">
-        <div id="Game-desc" class="bg-[#0B151E]  h-full w-1/3 right-0 relative">
-          <h1 class="text-2xl text-white m-4 font-MotivaSans " >GAME TITLE</h1>
-          <div id="In-game-images" class="grid grid-cols-2 grid-rows-2 gap-3 w-full ">
-            <img src="baguette.PNG" class="h-[70px] w-[162px]">
-            <img src="cock.PNG" class="h-[70px] w-[162px]">
-            <img src="i agree.PNG" class="h-[70px] w-[162px]">
-            <img src="speed.PNG" class="h-[70px] w-[162px]">
-          </div>
-          <div id="game-tag" class="mt-2 flex flex-col flex-grow">
-            <h1 class="text-white font-MotivaSansLight text-[20px]">Download Now</h1>
-            <div  class="flex flex-wrap gap-1">
-              <p class="text-white font-MotivaSans text-[12px] bg-[#394148] rounded-sm py-[2px] px-[4px] h-fit w-fit">Thugs</p>
-              <p class="text-white font-MotivaSans text-[12px] bg-[#394148] rounded-sm py-[2px] px-[4px] h-fit w-fit">Shaker</p>
-              <p class="text-white font-MotivaSans text-[12px] bg-[#394148] rounded-sm py-[2px] px-[4px] h-fit w-fit">Dreamy</p>
-              <p class="text-white font-MotivaSans text-[12px] bg-[#394148] rounded-sm py-[2px] px-[4px] h-fit w-fit">Yes King</p>
-              <p class="text-white font-MotivaSans text-[12px] bg-[#394148] rounded-sm py-[2px] px-[4px] h-fit w-fit" >Bo Sinn</p>
-            </div>
-          </div>
-          <div id="game-price" class=" w-full flex flex-grow justify-between absolute items-end bottom-0 ">
-            <p class="font-MotivaSans text-white text-[13px] h-fit">400,000₫</p>
-            <img src="window-icon.png" class="h-[18px] m-2">
+    <app-home-slider [games]="games"></app-home-slider>
+
+  <!--Home page game list  -->
+  <div class=" flex h-[50rem] w-full translate-y-[46rem] justify-center">
+    <div id="Home page game list" class="w-full h-full flex flex-col">
+      <div id="Home tabs" class="flex w-2/3 gap-6 justify-center">
+        <button (click)="buttonClicked('newAndTrending')"
+                [ngClass]="activeButton === 'newAndTrending' ? ' bg-[#2A475E] rounded-t-[2px] text-white px-2 py-1' : 'bg-[#1B2838] text-[#1B87CB]'" >New & Trending</button>
+        <button (click)="buttonClicked('topSeller')"
+                [ngClass]="activeButton === 'topSeller' ? 'bg-[#2A475E] rounded-t-[2px] text-white px-2 py-1' : 'bg-[#1B2838] text-[#1B87CB]'">Top Seller</button>
+        <button (click)="buttonClicked('trendingFree')"
+                [ngClass]="activeButton === 'trendingFree' ? 'bg-[#2A475E] rounded-t-[2px] text-white px-2 py-1' : 'bg-[#1B2838] text-[#1B87CB]'">Trending free</button>
+      </div>
+      <div class="Game-list-bg h-fit w-full flex justify-center">
+        <div class="bg-white h-[200rem] w-[60rem] max-w-[60rem] ">
+          <div class="w-2/3 h-full bg-gray-700">
+            <app-game-list-layout [gameImg]="'baguette.PNG'" [gameTags]="['Action', 'RPG', 'Turn-based']"></app-game-list-layout>
           </div>
         </div>
       </div>

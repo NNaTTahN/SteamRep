@@ -1,0 +1,12 @@
+.slideButtonNext{
+  background: linear-gradient(to left, #131C28, rgba(19, 28, 40, 0));
+}
+.slideButtonPrev{
+  background: linear-gradient(to right, #131C28, rgba(19, 28, 40, 0));
+}
+.nextButtonHover:hover{
+  background: linear-gradient(to left, #475F72, rgba(71, 95, 114, 0));
+}
+.prevButtonHover:hover{
+  background: linear-gradient(to right, #475F72, rgba(71, 95, 114, 0));
+}

@@ -1,0 +1,12 @@
+<div class="flex justify-center absolute z-30 translate-y-[15rem] h-[23rem] items-center w-full">
+  <button (click)="prevSlide();" class="w-[50px] h-[100px]  slideButtonPrev prevButtonHover"><img src="arrow left.png"></button>
+  <slideItem [Title]="currentGame.title"
+             [Thumbnail]="currentGame.thumbnail"
+             [Images]="currentGame.images"
+             [Tags]="currentGame.tags"
+             [Price]="currentGame.price"
+             [Platform]="currentGame.platform" class="min-w-[55rem] w-1/2 h-[110%]">
+  </slideItem>
+  <button (click)="nextSlide()" class="w-[50px] h-[100px] slideButtonNext nextButtonHover flex justify-end items-center"><img src="arrow right.png" class=""></button>
+
+</div>

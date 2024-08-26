@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HomeNavComponent } from './home-nav.component';
+import { GameListLayoutComponent } from './game-list-layout.component';
 
-describe('HomeNavComponent', () => {
-  let component: HomeNavComponent;
-  let fixture: ComponentFixture<HomeNavComponent>;
+describe('GameListLayoutComponent', () => {
+  let component: GameListLayoutComponent;
+  let fixture: ComponentFixture<GameListLayoutComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HomeNavComponent]
+      imports: [GameListLayoutComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(HomeNavComponent);
+    fixture = TestBed.createComponent(GameListLayoutComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

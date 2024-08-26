@@ -1,0 +1,17 @@
+<div class="group flex justify-between hover:bg-[#B8DAEE] h-[5rem] w-full mt-3">
+  <div class="flex">
+    <img [src]="gameImg" alt="game image" class="w-[180px] h-[80px]">
+    <div class="mt-2 ml-2 flex flex-col gap-1">
+      <h1 class="font-MotivaSans text-gray-200 group-hover:text-black">{{gameTitle}}</h1>
+      <img [src]="gamePlatform" alt="Game platform" class="h-[17px] w-[17px]">
+      <ul class="flex gap-2">
+        <li *ngFor="let tag of gameTags | slice:0:4" class="font-MotivaSans text-gray-500 text-[13px] group-hover:text-black">{{tag}}</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="flex flex-col relative justify-end">
+    <p class="font-MotivaSans text-gray-200 group-hover:text-black text-right">{{gamePrice}}</p>
+    <p class="font-MotivaSans text-gray-500 ">{{gameDate}}</p>
+  </div>
+</div>
