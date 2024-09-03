@@ -1,0 +1,22 @@
+<div class="flex justify-center flex-col mt-3 w-full h-full">
+  <div class="relative -top-6">
+    <h1 class="font-MotivaSans text-2xl overflow-hidden overflow-ellipsis text-nowrap w-full">{{Title}}</h1>
+    <div class="flex flex-col  bg-[#4E6172] w-[90%]">
+      <p class="text-[#C6D4DF] text-[13px]">Overall user reviews:</p>
+      <p [ngClass]="{'text-[#5FC0F4]': Review.includes('Positive'),
+    'text-[#B9A074]': Review.includes('Mixed'),
+    'text-[#E06363]': Review.includes('Negative')}" class="text-[13px]">{{Review}}</p>
+    </div>
+  </div>
+
+  <ul class="flex gap-2 mt-3">
+    <li *ngFor="let tags of Tag" class="h-fit w-fit mb-1 px-1 bg-[#4D6171] text-gray-100 hover:text-[#63C0EC] text-[12px]">{{tags}}</li>
+  </ul>
+  <div>
+    <ul>
+      <li *ngFor="let imgs of SideImg" class="flex justify-center">
+        <img src="{{imgs}}" class="h-[150px] w-[90%] mt-1">
+      </li>
+    </ul>
+  </div>
+</div>

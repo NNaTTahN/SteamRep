@@ -1,10 +1,11 @@
-import { Component, Input, OnInit, OnDestroy } from '@angular/core';
+import { Component, Input, OnInit, OnDestroy,  } from '@angular/core';
 import { SlideItemComponent} from "../Slide Item/slideItem.component";
+import {CommonModule, NgClass, NgFor} from "@angular/common";
 
 @Component({
   selector: 'app-home-slider',
   standalone: true,
-  imports: [SlideItemComponent],
+  imports: [SlideItemComponent, NgClass, NgFor],
   templateUrl: './home-slider.component.html',
   styleUrl: './home-slider.component.css'
 })
