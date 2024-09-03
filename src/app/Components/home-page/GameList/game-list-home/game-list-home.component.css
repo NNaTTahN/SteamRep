@@ -1,0 +1,3 @@
+.ease-in-instant {
+  transition: opacity 0.3s ease-out; /* Duration and easing function for the effect */
+}

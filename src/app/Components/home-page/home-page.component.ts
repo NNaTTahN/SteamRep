@@ -1,7 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule} from "@angular/common";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { GameListLayoutComponent} from "./game-list-layout/game-list-layout.component";
+=======
+import { GameListLayoutComponent} from "./GameList/game-list-layout/game-list-layout.component";
+>>>>>>> a8d4776 (game list 90%)
 import { SlideItemComponent} from "./Slide Item/slideItem.component";
 <<<<<<< HEAD
 import {HomeSliderComponent} from "./home-slider/home-slider.component";
@@ -9,9 +13,15 @@ import {HomeSliderComponent} from "./home-slider/home-slider.component";
 >>>>>>> a8eced8 (Home page game list WIP)
 =======
 import { HomeSliderComponent} from "./home-slider/home-slider.component";
+<<<<<<< HEAD
 import { GameListHomeComponent} from "./game-list-home/game-list-home.component";
 import {GameListSidePanelComponent} from "./game-list-side-panel/game-list-side-panel.component";
 >>>>>>> 4b07e5d (Game list side panel wip)
+=======
+import { GameListHomeComponent} from "./GameList/game-list-home/game-list-home.component";
+import {GameListSidePanelComponent} from "./GameList/game-list-side-panel/game-list-side-panel.component";
+
+>>>>>>> a8d4776 (game list 90%)
 
 @Component({
   selector: 'app-home-page',
@@ -24,12 +34,14 @@ import {GameListSidePanelComponent} from "./game-list-side-panel/game-list-side-
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.css'
 })
+
 export class HomePageComponent {
   activeButton: string | null = 'newAndTrending';
 
   buttonClicked(button: string) {
     this.activeButton = button;
   }
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
   gameList =[
@@ -58,6 +70,9 @@ export class HomePageComponent {
       gameDate: '10/5/2024',
     }
   ]
+=======
+
+>>>>>>> a8d4776 (game list 90%)
 
   games = [
     {
@@ -84,5 +99,9 @@ export class HomePageComponent {
       price: "3000,00₫",
       platform: "window-icon.png"
     }]
+<<<<<<< HEAD
 >>>>>>> 4b07e5d (Game list side panel wip)
+=======
+
+>>>>>>> a8d4776 (game list 90%)
 }

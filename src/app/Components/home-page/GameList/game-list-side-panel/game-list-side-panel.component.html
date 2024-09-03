@@ -1,7 +1,7 @@
-<div class="flex justify-center flex-col mt-3 w-full h-full">
-  <div class="relative -top-6">
-    <h1 class="font-MotivaSans text-2xl overflow-hidden overflow-ellipsis text-nowrap w-full">{{Title}}</h1>
-    <div class="flex flex-col  bg-[#4E6172] w-[90%]">
+<div class="flex justify-center flex-col w-full h-full">
+  <div class="flex flex-col justify-center relative -top-6">
+    <h1 class="font-MotivaSans text-2xl overflow-hidden overflow-ellipsis text-nowrap w-full ml-3 mt-4">{{Title}}</h1>
+    <div class="flex flex-col pl-2 bg-[#4E6172] w-[92%] mx-auto">
       <p class="text-[#C6D4DF] text-[13px]">Overall user reviews:</p>
       <p [ngClass]="{'text-[#5FC0F4]': Review.includes('Positive'),
     'text-[#B9A074]': Review.includes('Mixed'),
@@ -9,8 +9,8 @@
     </div>
   </div>
 
-  <ul class="flex gap-2 mt-3">
-    <li *ngFor="let tags of Tag" class="h-fit w-fit mb-1 px-1 bg-[#4D6171] text-gray-100 hover:text-[#63C0EC] text-[12px]">{{tags}}</li>
+  <ul class="flex gap-1 mx-auto">
+    <li *ngFor="let tags of Tag" class="h-fit w-fit mb-1 px-1 bg-[#4D6171] text-gray-100 hover:text-[#63C0EC] text-[12px] overflow-hidden text-nowrap max-w-[150px] rounded-[2px]">{{tags}}</li>
   </ul>
   <div>
     <ul>

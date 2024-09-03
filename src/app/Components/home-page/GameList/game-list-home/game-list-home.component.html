@@ -1,7 +1,24 @@
-<app-game-list-layout *ngFor="let game of gameList"
-                      [gameTitle]="game.gameTitle"
-                      [gameImg]="game.gameImg"
-                      [gameTags]="game.gameTags"
-                      [gamePlatform]="game.gamePlatform"
-                      [gameDate]="game.gameDate"
-                      [gamePrice]="game.gamePrice"></app-game-list-layout>
+<div class="flex h-full">
+  <div class="w-2/3">
+    <app-game-list-layout *ngFor="let game of gameList; let i = index"
+                          [gameTitle]="game.gameTitle"
+                          [gameImg]="game.gameImg"
+                          [gameTags]="game.gameTags"
+                          [gamePlatform]="game.gamePlatform"
+                          [gameDate]="game.gameDate"
+                          [gamePrice]="game.gamePrice"
+                          (mouseenter)="onHoverGame(game,i)"
+                          [isActive]="activeIndex === i"></app-game-list-layout>
+  </div>
+  <div class="bg-[#95BBD4] h-full w-1/3">
+    <app-game-list-side-panel *ngFor="let game of gameList; let i = index"
+                              [Title]="hoveredGame.gameTitle"
+                              [Review]="hoveredGame.sideReview"
+                              [SideImg]="hoveredGame.sideImg"
+                              [Tag]="hoveredGame.gameTags"
+                              class=" w-1/3 h-full transition-opacity duration-300 ease-in-instant"
+                              [ngClass]="{'opacity-0': isFading, 'opacity-100': !isFading}"></app-game-list-side-panel>
+  </div>
+
+</div>
+
