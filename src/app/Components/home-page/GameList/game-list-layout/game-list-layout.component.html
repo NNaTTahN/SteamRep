@@ -1,14 +1,13 @@
 <div class="flex justify-between h-[5rem] w-full mt-3"
      [ngClass]="{'bg-[#B8DAEE]' : isActive}">
   <div class="flex justify-between">
-    <div class="flex">
+    <div class="flex hover:text-black">
       <img [src]="gameImg" alt="game image" class="w-[180px] h-[80px]">
       <div class="mt-2 ml-2 flex flex-col gap-1">
-        <h1 class="font-MotivaSans text-gray-200 " [ngClass]="{'text-black' : isActive}">{{gameTitle}}</h1>
+        <h1 class="font-MotivaSans text-gray-200" [ngClass]="{'!text-black' : isActive}">{{gameTitle}}</h1>
         <img [src]="gamePlatform" alt="Game platform" class="h-[17px] w-[17px]">
         <ul class="flex gap-2">
           <li *ngFor="let tag of gameTags | slice:0:4"
-              [ngClass]="{'text-black' : isActive}"
               class="font-MotivaSans text-gray-500 text-[13px] max-w-[150px] whitespace-nowrap overflow-hidden">{{tag}}</li>
         </ul>
       </div>
@@ -16,7 +15,8 @@
   </div>
   <div class="flex flex-col relative justify-end">
     <p class=" text-[14px] text-gray-200 text-right mr-2"
-       [ngClass]="{'text-black' : isActive}">{{gamePrice}}</p>
+       [ngClass]="{'!text-black' : isActive}">{{gamePrice}}</p>
     <p class="flex justify-center font-MotivaSans text-[11px] text-gray-500 mr-2">{{gameDate}}</p>
   </div>
+
 </div>

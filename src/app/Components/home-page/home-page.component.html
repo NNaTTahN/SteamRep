@@ -1,69 +1,66 @@
 <!--Gradient-->
 
 <!--Body-->
-<<<<<<< HEAD
-<<<<<<< HEAD
-<div class="bg-[#1B2838] h-[70rem] w-full min-w-full">
-  <div class="absolute z-10 h-[200px] sm:h-[600px] w-full sm:max-w-[600px] rounded-[100%] bg-[#184251] translate-x-[15rem] translate-y-[-10rem] blur-[100px]"></div>
-  <div class="absolute z-0 h-[100px] lg:h-[800px]  md:max-w-[400px] sm:max-w-[200px]  rounded-[100%] bg-[#1F3052] translate-x-[25rem] translate-y-[-10rem] blur-[300px]"></div>
-=======
-<div class="bg-[#1B2838] h-[70rem]">
->>>>>>> a8eced8 (Home page game list WIP)
-=======
-<div class="bg-[#1B2838] h-[70rem] min-w-[1000px] w-full">
-  <div class="absolute z-10 h-[200px] sm:h-[600px] w-full sm:max-w-[600px] overflow-hidden rounded-[100%] bg-[#184251] translate-x-[15rem] translate-y-[-10rem] blur-[100px]"></div>
-  <div class="absolute z-0 h-[100px] lg:h-[800px]  md:max-w-[400px] sm:max-w-[200px] overflow-hidden  rounded-[100%] bg-[#1F3052] translate-x-[25rem] translate-y-[-10rem] blur-[300px]"></div>
->>>>>>> 4b07e5d (Game list side panel wip)
-  <!-- Search bar -->
-  <div class="inset-0  flex justify-center">
-    <div class="relative z-20 bg-gradient-to-r from-[#3B6691] to-[#0F216E] w-1/2 h-fit  translate-y-[10rem] flex justify-between min-w-[55rem]">
-      <div class="flex gap-4">
-        <a class="font-MotivaSans text-white p-2 text-[14px] text-shadow-black hover-highlight">Your Store</a>
-        <a class="font-MotivaSans text-white p-2 text-[14px] text-shadow-black hover-highlight">News & Noteworthy</a>
-        <a class="font-MotivaSans text-white p-2 text-[14px] text-shadow-black hover-highlight">Categories</a>
-      </div>
-      <div class="flex bg-[#316282] m-1 items-center relative">
-        <input type="text" placeholder="search" class="text-[15px] text-shadow-white bg-[#316282] border-0 placeholder:italic placeholder-[#0E1C25] rounded-sm pl-[10px] m-1">
-        <img src="SearchBTN.PNG" class="h-[26px] rounded-sm absolute right-0">
-      </div>
-    </div>
-  </div>
-  <!-- Featured & Recommended -->
-    <app-home-slider [games]="games"></app-home-slider>
 
-  <!--Home page game list  -->
-  <div class=" flex h-[50rem] w-full translate-y-[46rem] justify-center">
-    <div id="Home page game list" class="w-full h-full flex flex-col">
-      <div id="Home tabs" class="flex w-2/3 gap-6 justify-center">
-        <button (click)="buttonClicked('newAndTrending')"
-                [ngClass]="activeButton === 'newAndTrending' ? ' bg-[#2A475E] rounded-t-[2px] text-white px-2 py-1' : 'bg-[#1B2838] text-[#1B87CB]'" >New & Trending</button>
-        <button (click)="buttonClicked('topSeller')"
-                [ngClass]="activeButton === 'topSeller' ? 'bg-[#2A475E] rounded-t-[2px] text-white px-2 py-1' : 'bg-[#1B2838] text-[#1B87CB]'">Top Seller</button>
-        <button (click)="buttonClicked('trendingFree')"
-                [ngClass]="activeButton === 'trendingFree' ? 'bg-[#2A475E] rounded-t-[2px] text-white px-2 py-1' : 'bg-[#1B2838] text-[#1B87CB]'">Trending free</button>
+<div class="bg-[#1B2838] h-[70rem] w-full min-w-full">
+  <div
+    class="absolute z-10 h-[200px] sm:h-[600px] w-full sm:max-w-[600px] rounded-[100%] bg-[#184251] translate-x-[15rem] translate-y-[-10rem] blur-[100px]"></div>
+  <div
+    class="absolute z-0 h-[100px] lg:h-[800px]  md:max-w-[400px] sm:max-w-[200px]  rounded-[100%] bg-[#1F3052] translate-x-[25rem] translate-y-[-10rem] blur-[300px]"></div>
+  <div class="bg-[#1B2838] h-[70rem]">
+    <div class="bg-[#1B2838] h-[70rem] min-w-[1000px] w-full">
+      <div
+        class="absolute z-10 h-[200px] sm:h-[600px] w-full sm:max-w-[600px] overflow-hidden rounded-[100%] bg-[#184251] translate-x-[15rem] translate-y-[-10rem] blur-[100px]"></div>
+      <div
+        class="absolute z-0 h-[100px] lg:h-[800px]  md:max-w-[400px] sm:max-w-[200px] overflow-hidden  rounded-[100%] bg-[#1F3052] translate-x-[25rem] translate-y-[-10rem] blur-[300px]"></div>
+
+      <!-- Search bar -->
+      <div class="inset-0  flex justify-center">
+        <div
+          class="relative z-20 bg-gradient-to-r from-[#3B6691] to-[#0F216E] w-1/2 h-fit  translate-y-[10rem] flex justify-between min-w-[55rem]">
+          <div class="flex gap-4">
+            <a class="font-MotivaSans text-white p-2 text-[14px] text-shadow-black hover-highlight">Your Store</a>
+            <a class="font-MotivaSans text-white p-2 text-[14px] text-shadow-black hover-highlight">News &
+              Noteworthy</a>
+            <a class="font-MotivaSans text-white p-2 text-[14px] text-shadow-black hover-highlight">Categories</a>
+          </div>
+          <div class="flex bg-[#316282] m-1 items-center relative">
+            <input type="text" placeholder="search"
+                   class="text-[15px] text-shadow-white bg-[#316282] border-0 placeholder:italic placeholder-[#0E1C25] rounded-sm pl-[10px] m-1">
+            <img src="SearchBTN.PNG" class="h-[26px] rounded-sm absolute right-0">
+          </div>
+        </div>
       </div>
-      <div class="Game-list-bg h-fit w-full flex justify-center">
-        <div class="h-[48rem] bg-white w-[60rem] max-w-[60rem] flex ">
-          <div class="w-full h-[48rem] bg-gray-700 overflow-hidden">
-            <app-game-list-home class="h-[48rem]"></app-game-list-home>
+      <!-- Featured & Recommended -->
+      <app-home-slider [games]="games"></app-home-slider>
+
+      <!--Home page game list  -->
+      <div class=" flex h-[50rem] w-full translate-y-[46rem] justify-center">
+        <div id="Home page game list" class="w-full h-full flex flex-col">
+          <div id="Home tabs" class="flex w-2/3 gap-6 justify-center">
+            <button (click)="buttonClicked('newAndTrending')"
+                    [ngClass]="activeButton === 'newAndTrending' ? ' bg-[#2A475E] rounded-t-[2px] text-white px-2 py-1' : 'bg-[#1B2838] text-[#1B87CB]'">
+              New & Trending
+            </button>
+            <button (click)="buttonClicked('topSeller')"
+                    [ngClass]="activeButton === 'topSeller' ? 'bg-[#2A475E] rounded-t-[2px] text-white px-2 py-1' : 'bg-[#1B2838] text-[#1B87CB]'">
+              Top Seller
+            </button>
+            <button (click)="buttonClicked('trendingFree')"
+                    [ngClass]="activeButton === 'trendingFree' ? 'bg-[#2A475E] rounded-t-[2px] text-white px-2 py-1' : 'bg-[#1B2838] text-[#1B87CB]'">
+              Trending free
+            </button>
+          </div>
+          <div class="Game-list-bg h-fit w-full flex justify-center">
+            <div class="h-[48rem] bg-white w-[60rem] max-w-[60rem] flex ">
+              <div class="w-full h-[48rem] bg-gray-700 overflow-hidden">
+                <app-game-list-home class="h-[48rem]"></app-game-list-home>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-  <!--Home page game list  -->
-  <div class="Game-list-bg flex h-[70rem] w-full translate-y-[46rem] justify-center pt-2">
-    <div id="Home page game list" class="bg-white h-full w-1/2">
-      <div id="Home tabs" class="flex">
-        <button (click)="buttonClicked('newAndTrending')"
-                [ngClass]="activeButton === 'newAndTrending' ? ' bg-[#2A475E] rounded-t-[2px]' : 'bg-[#1B2838]'" >New & Trending</button>
-        <button (click)="buttonClicked('topSeller')"
-                [ngClass]="activeButton === 'topSeller' ? 'bg-[#2A475E] rounded-t-[2px]' : 'bg-[#1B2838]'">Top Seller</button>
-        <button (click)="buttonClicked('trendingFree')"
-                [ngClass]="activeButton === 'trendingFree' ? 'bg-[#2A475E] rounded-t-[2px]' : 'bg-[#1B2838]'">Trending free</button>
-      </div>
-    </div>
-  </div>
-
 </div>
+

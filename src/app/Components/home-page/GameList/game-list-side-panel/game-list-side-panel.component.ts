@@ -13,6 +13,5 @@ export class GameListSidePanelComponent {
   @Input()Tag: string [] = ["Game tags 1", "Game tags 2", "Game tags 3"];
   @Input()SideImg: string[] =['angy.jpg', 'lightskinned.png', 'swagger.png', 'cock.PNG'];
   @Input()Title: string = "Game title 1";
-
   @Input()isActive : boolean = false;
 }

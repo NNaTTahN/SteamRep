@@ -23,17 +23,17 @@ export class GameListHomeComponent {
   gameList =[
     {
       gameImg: 'swagger.png',
-      gameTitle: "Thugger",
+      gameTitle: "Game title 1",
       gameTags: ['Action', 'Swagger', 'Penis', 'THE THUG SHAKER DO THE SHAKER SHAKE IT'],
       gamePlatform: 'window-icon.png',
       gamePrice: '123,123₫',
       gameDate: '20/8/2023',
       sideReview: 'Very Positive',
-      sideImg: ['christmas-god.png', 'Tet-god.png', 'demi-god.png','god.png']
+      sideImg: ['Leorio.jpg', 'Reiner.jpg', 'dawg.png','omniman.png']
     },
     {
-      gameImg: 'speed.PNG',
-      gameTitle: "DreamyBullxxx",
+      gameImg: 'the drink.png',
+      gameTitle: "Game title 2",
       gameTags: ['Action', 'Swagger', 'Penis', 'Adventure'],
       gamePlatform: 'window-icon.png',
       gamePrice: '123,123₫',
@@ -42,9 +42,9 @@ export class GameListHomeComponent {
       sideImg: ['goku.jpg', 'pedogoku.png', 'dripgoku.png','moggoku.png']
     },
     {
-      gameImg: 'baguette.PNG',
-      gameTitle: "Amazing Cultivator Simulator",
-      gameTags: ['Action', 'Swagger', 'LGBTQ+', 'Mega Faggot'],
+      gameImg: 'Lowtierman.jpg',
+      gameTitle: "Game title 3",
+      gameTags: ['Action', 'Swagger', 'LGBTQ+', 'KYS'],
       gamePlatform: 'window-icon.png',
       gamePrice: '100,223₫',
       gameDate: '10/5/2024',
